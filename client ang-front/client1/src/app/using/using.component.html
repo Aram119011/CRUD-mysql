@@ -1,0 +1,48 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <a class="navbar-brand" href="#">logo</a>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+
+
+    </ul>
+    <button type="button" class="btn btn-outline-primary"  (click)="myLogout()">Login out</button>
+  </div>
+</nav>
+
+<div class="d-flex" id="wrapper">
+  <div id="page-content-wrapper">
+    <nav class="navbar navbar-dark default-color">
+      <div class="form-inline my-2 my-lg-0 ml-auto">
+        <input [(ngModel)]="data" class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+        <!--<button type="button" class="btn btn-info" (click)="foo(data)">Search</button>-->
+      </div>
+    </nav>
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>
+
+
+
+
+
+<table class="table table-striped table-dark" >
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">title</th>
+    <th scope="col">description</th>
+    <th scope="col">content</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let obj of model">
+    <td scope="row">1</td>
+    <td>{{obj.title}}Mark</td>
+    <td>{{obj.description}}</td>
+    <td>{{obj.content}}</td>
+  </tr>
+  </tbody>
+</table>

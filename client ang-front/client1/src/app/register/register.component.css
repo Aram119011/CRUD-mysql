@@ -1,0 +1,30 @@
+.img_col {
+  /*background-color: orange;*/
+  margin-top: 50px;
+}
+
+.cont{
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../../assets/images/back3.jpg');
+  background-size: cover;
+}
+
+.op-class {
+  background-color: rgb(90,96,104);
+  margin-top: 50px;
+  border-radius: 10px;
+
+}
+
+.font_log {
+  font-size: 18px;
+  color: white;
+
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+

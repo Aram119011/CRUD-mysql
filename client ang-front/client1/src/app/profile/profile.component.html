@@ -1,0 +1,103 @@
+<!--<p>-->
+  <!--profile works!-->
+<!--</p>-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+  <!--<a class="navbar-brand" href="#">Navbar</a>-->
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--<span class="navbar-toggler-icon"></span>-->
+  <!--</button>-->
+  <!--<div class="collapse navbar-collapse" id="navbarNav">-->
+    <!--<ul class="navbar-nav">-->
+      <!--<li class="nav-item active">-->
+        <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#">Features</a>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#">Pricing</a>-->
+      <!--</li>-->
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+      <!--</li>-->
+
+    <!--</ul>-->
+    <!--<ul class ='nav'>-->
+      <!--<li class="nav-item">-->
+        <!--<button type="button" class="btn btn-outline-primary"  (click)="myLogout()">Login out</button>-->
+
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
+<!--</nav>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+  <a class="navbar-brand" href="#">logo</a>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+
+
+    </ul>
+       <button type="button" class="btn btn-outline-primary"  (click)="myLogout()">Login out</button>
+  </div>
+</nav>
+
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="list-group list-group-flush">
+      <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+
+  <div id="page-content-wrapper">
+    <nav class="navbar navbar-dark default-color">
+      <div class="form-inline my-2 my-lg-0 ml-auto">
+        <input [(ngModel)]="data" class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+        <!--<button type="button" class="btn btn-info" (click)="foo(data)">Search</button>-->
+      </div>
+    </nav>
+  </div>
+
+
+
+  <!-- /#page-content-wrapper -->
+
+</div>
+
+<!--<h1>Auto Expo</h1>-->
+
+
+<div class = "container">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <h4>Title Input</h4>
+    <div class = "form-group">
+      <input type = "title" class = "form-control"
+             id = "exampleFormControlInput1" placeholder = "Enter your title" formControlName="title">
+    </div>
+
+    <h4>Example description</h4>
+    <div class = "form-group">
+      <textarea class = "form-control" id = "exampleFormControlTextarea1" rows = "3" formControlName="description"></textarea>
+    </div>
+    <h4>Example content</h4>
+    <div class = "form-group">
+      <textarea class = "form-control" id = "exampleFormControlTextarea2" rows = "3" formControlName="content"></textarea>
+    </div>
+    <button type="button" class="btn btn-info" (click)="foo(data)">Search</button>
+  </form>
+  <ul class="list-group">
+    <li *ngFor="let item of names" class="list-group-item">{{item}}</li>
+  </ul>
+</div>
